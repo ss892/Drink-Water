@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+  --clr-blue:#3494e4;
+  --clr-border:#144fc6;
+  --clr-water:#6ab3f8;
+  --clr-whitish-blue:rgba(255, 255, 255, 0.9);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--clr-blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* container */
+.container{
+  width: 34rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* header container */
+.headerContainer{
+  color: white;
+  text-align: center;
+  margin: 0.8rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title{
+  font-weight: 600;
+}
+
+.goal{
+  font-size: 1.1rem;
+}
+
+/* twoLitreGlass conatiner */
+.twoLitreGlass{
+  width: 9.5rem;
+  height: 20rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border: 4px solid var(--clr-border);
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+}
+
+.litre{
+  font-weight: 900;
+  color: var(--clr-border);
+}
+
+.ltrRemained{
+  color: var(--clr-border);
+}
+
+/* small glass container area */
+.glassSelectionText{
+  color: white;
+}
+
+.smallGlassContainer{
+  height: 14rem;
+  padding: 0.5rem 6rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.smallGlass{
+  background-color: var(--clr-whitish-blue);
+  color: var(--clr-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid var(--clr-border);
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  /* effect */
+  cursor: pointer;
+}
+
+.waterFilled{
+  background-color: var(--clr-water);
+}
+
+/* quantity */
+.quantity,.unit{
+  font-size: 0.9rem;
+}
+
+.water-filling{
+  color: var(--clr-whitish-blue);
+  width: 100%;
+  background-color: var(--clr-water);
+  border: 0px solid var(--clr-border);
+  border-bottom-left-radius: 2.25rem;
+  border-bottom-right-radius: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.remaining-water-ltr{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
